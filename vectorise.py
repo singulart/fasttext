@@ -1,7 +1,7 @@
 import fasttext
 from pymystem3 import Mystem
 
-with open('input.txt') as f:
+with open('normie.txt') as f:
     raw_input = ''.join(f.readlines())
 
 my = Mystem()
