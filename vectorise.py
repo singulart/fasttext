@@ -15,10 +15,10 @@ print('fasttext training started...')
 model = fasttext.train_unsupervised('input_lemmas.txt',
                                     model='skipgram',
                                     dim=100,             # size of word vectors [100]
-                                    lr=0.05,             # learning rate [0.05]
-                                    ws=1,                # size of the context window [5]
-                                    epoch=3500,          # number of epochs [5]
-                                    loss='hs',           # loss function {ns, hs, softmax, ova} [ns]
+                                    lr=0.7,              # learning rate [0.05]
+                                    ws=5,                # size of the context window [5]
+                                    epoch=20000,         # number of epochs [5]
+                                    loss='softmax',      # loss function {ns, hs, softmax, ova} [ns]
                                     t=1e-4,              # sampling threshold [0.0001]
                                     lrUpdateRate=100,    # change the rate of updates for the learning rate [100]
                                     wordNgrams=1,        # max length of word ngram [1]
